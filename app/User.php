@@ -12,6 +12,8 @@ class User extends Authenticatable
 {
     use Notifiable, HasRoles;
 
+    public static $columns=['Username','E-mail','User Type','Create At'];
+
     /**
      * The attributes that are mass assignable.
      *

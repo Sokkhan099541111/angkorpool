@@ -30,6 +30,7 @@
 
 @section('styles')
     {{ Html::style('assets/admin/css/admin.css') }}
+    
 @endsection
 
 @section('scripts')

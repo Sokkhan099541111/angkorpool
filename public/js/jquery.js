@@ -63,40 +63,23 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 46);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 10:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-window.$ = window.jQuery = __webpack_require__(35);
+window.$ = window.jQuery = __webpack_require__(2);
 
 /***/ }),
-
-/***/ 11:
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\n\tcolor: $secondary-color !important;\r\n       ^\r\n      Undefined variable: \"$secondary-color\".\r\n      in c:\\xampp\\htdocs\\angkorpool.dev\\resources\\assets\\sass\\theme.scss (line 138, column 9)\n    at runLoaders (c:\\xampp\\htdocs\\angkorpool.dev\\node_modules\\webpack\\lib\\NormalModule.js:192:19)\n    at c:\\xampp\\htdocs\\angkorpool.dev\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at c:\\xampp\\htdocs\\angkorpool.dev\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (c:\\xampp\\htdocs\\angkorpool.dev\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (c:\\xampp\\htdocs\\angkorpool.dev\\node_modules\\sass-loader\\lib\\loader.js:55:13)\n    at Object.<anonymous> (c:\\xampp\\htdocs\\angkorpool.dev\\node_modules\\sass-loader\\node_modules\\async\\dist\\async.js:2244:31)\n    at Object.callback (c:\\xampp\\htdocs\\angkorpool.dev\\node_modules\\sass-loader\\node_modules\\async\\dist\\async.js:906:16)\n    at options.error (c:\\xampp\\htdocs\\angkorpool.dev\\node_modules\\node-sass\\lib\\index.js:294:32)");
-
-/***/ }),
-
-/***/ 12:
+/* 1 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 13:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 35:
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10356,16 +10339,12 @@ return jQuery;
 
 
 /***/ }),
-
-/***/ 46:
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(10);
-__webpack_require__(12);
-__webpack_require__(13);
-module.exports = __webpack_require__(11);
+__webpack_require__(0);
+module.exports = __webpack_require__(1);
 
 
 /***/ })
-
-/******/ });
+/******/ ]);

@@ -5,30 +5,32 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {{--CSRF Token--}}
+        <!--CSRF Token-->
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Angkor Pool</title>
-        
-        {{--Common App Styles--}}
-        {{ Html::style('assets/app/css/app.css') }}
 
-        {{--Styles--}}
+        <!--Common App Styles-->
+        {{ Html::style('assets/app/css/app.css') }}
+        {{ Html::style('assets/admin/css/admin.css') }}
+        {{ Html::style('assets/admin/css/custome.css') }}
+        <!--Styles-->
         @yield('styles')
 
-        {{--Head--}}
+        <!--Head-->
         @yield('head')
 
     </head>
     <body class="@yield('body_class')">
 
-        {{--Page--}}
+        <!--Page-->
         @yield('page')
 
-        {{--Common Scripts--}}
+        <!--Common Scripts -->
         {{ Html::script('assets/app/js/app.js') }}
+        {{ Html::script('assets/admin/js/admin.js') }}
 
 
-        {{--Scripts--}}
+        <!--Scripts-->
         @yield('scripts')
     </body>
 </html>
