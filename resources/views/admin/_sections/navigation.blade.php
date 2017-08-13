@@ -23,7 +23,7 @@
                     <li><a href="{{ route('admin.users') }}"><i class="fa fa-users" aria-hidden="true"></i> User</a></li>
                     <li><a href="{{ route('admin.roles') }}"><i class="fa fa-briefcase" aria-hidden="true"></i> Role</a></li>
                     <li><a href="{{ route('admin.permissions') }}"><i class="fa fa-users" aria-hidden="true"></i> Permission</a></li>
-                    <li><a><i class="fa fa-address-card" aria-hidden="true"></i> Applicant</a></li>
+                    <li><a href="{{ route('admin.applicants') }}"><i class="fa fa-address-card" aria-hidden="true"></i> Applicant</a></li>
                     <li><a><i class="fa fa-building" aria-hidden="true"></i> Organization</a></li>
                     <li><a><i class="fa fa-edit"></i> Recruiter</a></li>
                     <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Messages</a></li>

@@ -32,6 +32,14 @@ Route::group([ 'prefix' => 'admin', 'namespace' => 'Admin' ], function(){
         Route::put('/permission/edit/{permission}', 'PermissionController@update');
         Route::delete('/permission/delete/{permission}', 'PermissionController@delete')->name('admin.permission.delete');
         Route::get('/permission/{permission}', 'PermissionController@show')->name('admin.permission.show');
+
+        Route::get('/applicants', 'ApplicantController@index')->name('admin.applicants');
+        Route::get('/applicant/create', 'ApplicantController@create')->name('admin.applicant.create');
+        Route::post('/applicant/create', 'ApplicantController@store');
+        Route::get('/applicant/edit/{applicant}', 'ApplicantController@edit')->name('admin.applicant.edit');
+        Route::put('/applicant/edit/{applicant}', 'ApplicantController@update');
+        Route::delete('/applicant/delete/{applicant}', 'ApplicantController@delete')->name('admin.applicant.delete');
+        Route::get('/applicant/{applicant}', 'ApplicantController@show')->name('admin.applicant.show');
     });
 });
 
