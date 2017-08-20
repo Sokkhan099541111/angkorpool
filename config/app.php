@@ -180,7 +180,7 @@ return [
         Spatie\Permission\PermissionServiceProvider::class,
         // App\Providers\ZohoServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        
+        Barryvdh\Debugbar\ServiceProvider::class,
     ],
 
     /*
@@ -233,6 +233,7 @@ return [
         'ZohoRecruit' => App\Facades\ZohoRecruit::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];
