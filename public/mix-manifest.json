@@ -11,5 +11,6 @@
   "/js/tether.js": "/js/tether.js",
   "/js/bootstrap-sass.js": "/js/bootstrap-sass.js",
   "/js/bootstrap.js": "/js/bootstrap.js",
-  "/vendor/font-awesome/font-awesome.css": "/vendor/font-awesome/font-awesome.css"
+  "/vendor/font-awesome/font-awesome.css": "/vendor/font-awesome/font-awesome.css",
+  "/assets/admin/css/custome.css": "/assets/admin/css/custome.css"
 }

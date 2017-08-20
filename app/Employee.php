@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use App\EmployeeExperience;
 use App\EmployeeEducation;
 use App\Job;
@@ -11,6 +12,8 @@ use ZohoRecruit;
 
 class Employee extends Model
 {
+    use SoftDeletes;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -21,6 +24,8 @@ class Employee extends Model
         'dob', 'marital_status', 'phone_number',
         'address', 'profile_photo',
     ];
+
+    protected $dates = ['deleted_at'];
 
     /**
      * The "booting" method of the model.

@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->enum('user_type', ['CAN', 'EMP', 'REC'])->nullable();
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

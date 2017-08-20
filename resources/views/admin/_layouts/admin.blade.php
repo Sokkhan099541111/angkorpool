@@ -1,4 +1,4 @@
-@extends('admin.layouts.app')
+@extends('admin._layouts.app')
 
 @section('body_class','nav-md')
 
@@ -6,8 +6,8 @@
     <div class="container body">
         <div class="main_container">
             @section('header')
-                @include('admin.sections.navigation')
-                @include('admin.sections.header')
+                @include('admin._sections.navigation')
+                @include('admin._sections.header')
             @show
 
             @yield('left-sidebar')
@@ -30,6 +30,7 @@
 
 @section('styles')
     {{ Html::style('assets/admin/css/admin.css') }}
+
 @endsection
 
 @section('scripts')

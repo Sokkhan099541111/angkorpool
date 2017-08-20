@@ -25,6 +25,7 @@ class CreateEmployeesTable extends Migration
             $table->string('address')->nullable();
             $table->string('profile_photo')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -17,7 +17,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu pull-right">
                         <li>
-                            <a href="{{ route('logout') }}">`
+                            <a href="{{ route('admin.logout') }}">`
                                 <i class="fa fa-sign-out pull-right"></i>Log out
                             </a>
                         </li>

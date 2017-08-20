@@ -63,12 +63,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 45);
+/******/ 	return __webpack_require__(__webpack_require__.s = 46);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 34:
+/***/ 35:
 /***/ (function(module, exports) {
 
 /*!
@@ -3610,7 +3610,7 @@ var Popover = function ($) {
 
 /***/ }),
 
-/***/ 38:
+/***/ 39:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether 1.4.0 */
@@ -5432,7 +5432,7 @@ return Tether;
 
 /***/ }),
 
-/***/ 45:
+/***/ 46:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(9);
@@ -5443,8 +5443,8 @@ module.exports = __webpack_require__(9);
 /***/ 9:
 /***/ (function(module, exports, __webpack_require__) {
 
-window.Tether = __webpack_require__(38);
-__webpack_require__(34);
+window.Tether = __webpack_require__(39);
+__webpack_require__(35);
 
 /***/ })
 
