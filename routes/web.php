@@ -34,8 +34,8 @@ Route::group([ 'prefix' => 'admin', 'namespace' => 'Admin' ], function(){
         Route::get('/permission/{permission}', 'PermissionController@show')->name('admin.permission.show');
 
         Route::get('/applicants', 'ApplicantController@index')->name('admin.applicants');
-        Route::get('/applicant/create', 'ApplicantController@create')->name('admin.applicant.create');
-        Route::post('/applicant/create', 'ApplicantController@store');
+        // Route::get('/applicant/create', 'ApplicantController@create')->name('admin.applicant.create');
+        // Route::post('/applicant/create', 'ApplicantController@store');
         Route::get('/applicant/edit/{applicant}', 'ApplicantController@edit')->name('admin.applicant.edit');
         Route::put('/applicant/edit/{applicant}', 'ApplicantController@update');
         Route::delete('/applicant/delete/{applicant}', 'ApplicantController@delete')->name('admin.applicant.delete');

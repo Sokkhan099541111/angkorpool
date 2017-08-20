@@ -17,7 +17,7 @@
 
                     <div class="title_left">
                         <div class="create_object">
-                            <!-- <a href="{{ route('admin.applicant.create') }}" class="btn btn-primary">New Applicant</a> -->
+                            <!-- {{-- <a href="{{ route('admin.applicant.create') }}" class="btn btn-primary">New Applicant</a> --}} -->
                         </div>
                     </div>
                     <div class="title_right">
