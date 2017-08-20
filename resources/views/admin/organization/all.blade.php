@@ -17,7 +17,7 @@
 
                     <div class="title_left">
                         <div class="create_object">
-                            <a href="{{ route('admin.organization.create') }}" class="btn btn-primary">New Organization</a>
+                            <!-- {{-- <a href="{{ route('admin.organization.create') }}" class="btn btn-primary">New Organization</a> --}} -->
                         </div>
                     </div>
                     <div class="title_right">

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Validation\Rule;
 use App\Employer;
+use App\JobIndustry;
 
 class OrganizationController extends Controller
 {
@@ -23,7 +24,7 @@ class OrganizationController extends Controller
 
     public function create()
     {
-        return view('admin.organization.create');
+        return view('admin.organization.create', compact('industries'));
     }
 
     public function store(Request $request)
@@ -40,19 +41,21 @@ class OrganizationController extends Controller
 
     public function edit(Employer $organization)
     {
-        return view('admin.organization.edit', compact('organization'));
+        $industries = JobIndustry::all();
+
+        return view('admin.organization.edit', compact('organization', 'industries'));
     }
 
     public function update(Request $request, Employer $organization)
     {
         $this->validate($request, [
-            'surname' => 'required',
             'name' => 'required',
-            'gender' => 'required',
-            'phone_number' => 'required',
+            'email' => 'required|email',
+            'contact_number' => 'required',
+            'industry_id' => 'required',
         ]);
 
-        $organization->update($request->except('email'));
+        $organization->update($request->all());
 
         return redirect()->route('admin.organizations');
     }

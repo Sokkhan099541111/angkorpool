@@ -42,8 +42,8 @@ Route::group([ 'prefix' => 'admin', 'namespace' => 'Admin' ], function(){
         Route::get('/applicant/{applicant}', 'ApplicantController@show')->name('admin.applicant.show');
 
         Route::get('/organizations', 'OrganizationController@index')->name('admin.organizations');
-        Route::get('/organization/create', 'OrganizationController@create')->name('admin.organization.create');
-        Route::post('/organization/create', 'OrganizationController@store');
+        // Route::get('/organization/create', 'OrganizationController@create')->name('admin.organization.create');
+        // Route::post('/organization/create', 'OrganizationController@store');
         Route::get('/organization/edit/{organization}', 'OrganizationController@edit')->name('admin.organization.edit');
         Route::put('/organization/edit/{organization}', 'OrganizationController@update');
         Route::delete('/organization/delete/{organization}', 'OrganizationController@delete')->name('admin.organization.delete');
