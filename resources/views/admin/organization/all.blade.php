@@ -56,14 +56,9 @@
                                             <th>Name</th>
                                             <th>Email</th>
                                             <th>Phone Number</th>
-                                            <th>Fax</th>
                                             <th>Industry</th>
                                             <th>Website</th>
-                                            <th>About</th>
-                                            <th>Street</th>
-                                            <th>City</th>
                                             <th>Province</th>
-                                            <th>Post Code</th>
                                             <th>Created Date</th>
                                             <th>Updated Date</th>
                                             <th></th>
@@ -75,14 +70,9 @@
                                             <td>{{ $organization->name }}</td>
                                             <td>{{ $organization->email }}</td>
                                             <td>{{ $organization->contact_number }}</td>
-                                            <td>{{ $organization->fax }}</td>
-                                            <td>{{ $organization->industry_id }}</td>
+                                            <td>{{ $organization->industry_name }}</td>
                                             <td>{{ $organization->website }}</td>
-                                            <td>{{ $organization->about }}</td>
-                                            <td>{{ $organization->street }}</td>
-                                            <td>{{ $organization->city }}</td>
                                             <td>{{ $organization->province }}</td>
-                                            <td>{{ $organization->post_code }}</td>
                                             <td>{{ $organization->created_at->format('Y-m-d') }}</td>
                                             <td>{{ $organization->updated_at->format('Y-m-d') }}</td>
                                             <td>

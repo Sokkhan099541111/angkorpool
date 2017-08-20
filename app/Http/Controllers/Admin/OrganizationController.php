@@ -6,13 +6,12 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Validation\Rule;
 use App\Employer;
-use App\User;
 
 class OrganizationController extends Controller
 {
     public function index()
     {
-        $organizations = Employer::paginate(20);
+        $organizations = Employer::with('industry')->paginate(20);
 
         return view('admin.organization.all', compact('organizations'));
     }
